@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./includes/head') %>
+    <link rel="stylesheet" href="/styles/products-view.css" />
+  </head>
+  <body>
+   <%- include('./includes/header') %>
+   <%- include('./includes/aside') %>
+    <main>
+     <h1><%= item.name %></h1>
+     <p><%= item.description %> </p>
+     <p>&#8377  <%= item.price %> </p>
+     <a href="">Buy Now</a>
+    </main>
+  </body>
+</html>

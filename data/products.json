@@ -1,4 +1,21 @@
 [
-  { "item-name": "Cycle", "description": "2 wheeler", "price": "45" },
-  { "item-name": "Item2", "description": "Description2", "price": "50" }
+  {
+    "name": "Item1",
+    "description": "Description for Item1",
+    "price": "45",
+    "id": "87412c12-3db0-4b3a-b657-21c566209ca8"
+  },
+  {
+    "name": "item6",
+    "description": "Description2",
+    "price": "16",
+    "id": "4fec6c66-30e1-416f-ab0f-eb09501224b4"
+  },
+  {
+    "name": "Item7",
+    "description": "Description for Item7",
+    "price": "56",
+    "id": "2e267df4-32ff-4c69-9cb5-24c2af2f2603"
+  }
+  
 ]

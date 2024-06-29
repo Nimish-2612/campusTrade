@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./includes/head') %>
+    <link rel="stylesheet" href="/styles/products-view.css" />
+  </head>
+  <body>
+   <%- include('./includes/header') %>
+   <%- include('./includes/aside') %>
+    <main>
+      <h2>Choose from a variety of products</h2>
+
+      <% if(numberOfItems===0){ %>
+          Unfortunately, there are no more products right now. Maybe start listing products
+      <% } else { %>
+        <p>We found <%= numberOfItems  %> items</p>
+        <form action="/products" method="GET">
+          <input type="hidden" value="<%= nextOrder %>" name="order">
+          <button class="btn">Change Order</button>
+        </form>
+      <ul id="item-list">
+        <% for(const item of items) { %>
+       <%- include('./includes/Product-Folder/products',{item:item}) %>
+        <% } %>
+      </ul>
+        <%  }%>
+      
+    </main>
+  </body>
+</html>
